@@ -45,7 +45,7 @@ export default function Item() {
                   }}
                   sx={{
                     mt: 2,
-                    ml: { lg: 60, xs: 37, sm: 37, md: 58 },
+                    ml: { lg: 60, xs: 34, sm: 37, md: 58 },
                   }}
                 >
                   Go Back
