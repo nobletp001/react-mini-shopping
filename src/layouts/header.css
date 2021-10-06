@@ -1,0 +1,11 @@
+.cart{
+    position: relative;
+}
+.cart-num{
+    position: absolute;
+    top: -6px;
+   left: 40px;
+}
+.marginBotton{
+    margin-bottom: 70px;
+}
