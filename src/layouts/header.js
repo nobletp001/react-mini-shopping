@@ -138,7 +138,7 @@ useEffect(() => {
                 </Box>
                 <Button
                   variant="contained"
-                  sx={{ width: "100%" }}
+                  sx={{ width: "100%", mt:4 }}
                   style={{ textTransform: "Capitalize" }}
                 >
                   Proceed To checkOut
