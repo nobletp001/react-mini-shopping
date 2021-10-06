@@ -56,7 +56,11 @@ export default function Item() {
                 <Typography gutterBottom variant="h5" component="div">
                   {Item.title}
                 </Typography>
-                <Typography variant="body2" color="text.secondary" gutterBottom>
+                <Typography
+                  variant="subtitle2"
+                  color="text.secondary"
+                  gutterBottom
+                >
                   {Item.description}
                 </Typography>
                 <Typography
@@ -96,7 +100,7 @@ export default function Item() {
                 </Typography>
                 <Button
                   variant="contained"
-                  sx={{ width: "100%", borderRadius: 16, mt:{lg:20} }}
+                  sx={{ width: "100%", borderRadius: 16, mt: { lg: 20 } }}
                   style={{ textTransform: "Capitalize" }}
                   onClick={() => dispatch(addToCart(Item.id))}
                 >
