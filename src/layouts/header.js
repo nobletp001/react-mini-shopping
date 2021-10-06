@@ -80,7 +80,7 @@ useEffect(() => {
 
   const list = (anchor) => (
     <Box
-      sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 400 }}
+      sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 350 }}
       role="presentation"
       //  onClick={toggleDrawer(anchor, false)}
       //  onKeyDown={toggleDrawer(anchor, false)}
