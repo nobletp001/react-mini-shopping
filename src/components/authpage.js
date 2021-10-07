@@ -5,9 +5,14 @@ import Button from "@mui/material/Button";
 import { useDispatch } from "react-redux";
 import './authpage.css'
 import { logIn } from "../reduxComponent/shopping/auth/auth-actions";
+import { useHistory } from "react-router-dom";
 export default function Authpage() {
      const dispatch = useDispatch();
-
+let history = useHistory();
+const handleLogin=()=>{
+dispatch(logIn())
+history.push("/")
+}
     return (
       <div>
         <Box
@@ -39,7 +44,7 @@ export default function Authpage() {
             <Button
               variant="contained"
               sx={{ width: "100%", mt:1 }}
-              onClick={() => dispatch(logIn())}
+              onClick={handleLogin}
             >
               Log In
             </Button>
