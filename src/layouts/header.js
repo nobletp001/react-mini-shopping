@@ -80,7 +80,7 @@ useEffect(() => {
 
   const list = (anchor) => (
     <Box
-      sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 350 }}
+      sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 250 }}
       role="presentation"
       //  onClick={toggleDrawer(anchor, false)}
       //  onKeyDown={toggleDrawer(anchor, false)}
@@ -133,12 +133,12 @@ useEffect(() => {
                     style={{ color: "#ec407a" }}
                     gutterBottom
                   >
-                   ${Math.floor(totalPrice)}
+                    ${Math.floor(totalPrice)}
                   </Typography>
                 </Box>
                 <Button
                   variant="contained"
-                  sx={{ width: "100%", mt:4 }}
+                  sx={{ width: "100%", mt: 4 }}
                   style={{ textTransform: "Capitalize" }}
                 >
                   Proceed To checkOut

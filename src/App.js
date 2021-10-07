@@ -4,9 +4,9 @@ import Products from './components/products';
 import ItemComponent from './components/item';
 import Header from  './layouts/header'
 import Notfound from './components/Notfound';
-import Authpage from './components/authpage';
+// import Authpage from './components/authpage';
 import { useSelector } from "react-redux";
-import { ProtectedRoute } from "../src/components/protected-route";
+// import { ProtectedRoute } from "../src/components/protected-route";
 export default function App() {
     const Item = useSelector((state) => state.shop.currentItem);
   
@@ -14,16 +14,16 @@ return (
   <Router>
     <div>
       <Switch>
-        <Route path="/auth" exact>
+        {/* <Route path="/auth" exact>
           <Authpage />
-        </Route>
+        </Route> */}
         <Header>
-          <ProtectedRoute path="/" exact component={Products} />
+          <Route path="/" exact component={Products} />
 
           {!Item ? (
             <Redirect to="/" exact />
           ) : (
-            <ProtectedRoute path="/item/:id" component={ItemComponent} exact />
+            <Route path="/item/:id" component={ItemComponent} exact />
           )}
           <Route component={Notfound} exact />
         </Header>
