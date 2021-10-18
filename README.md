@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You can checkout this site on this link https://react-mini-shopping-cart.netlify.app
 
 ## Available Scripts
 
